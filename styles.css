@@ -110,6 +110,8 @@ nav {
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -146,6 +148,9 @@ nav {
 
 .project-info {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .project-info h3 {
@@ -164,6 +169,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-top: auto;
 }
 
 .tag {
