@@ -77,6 +77,13 @@ nav {
     opacity: 0.9;
 }
 
+.hero-content .wip-notice {
+    margin-top: 1rem;
+    font-size: 1rem;
+    opacity: 0.8;
+    font-style: italic;
+}
+
 /* Projects Section */
 .projects {
     padding: 80px 20px;
