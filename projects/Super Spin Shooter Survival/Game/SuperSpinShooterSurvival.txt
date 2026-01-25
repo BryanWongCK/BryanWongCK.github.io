@@ -1,0 +1,28 @@
+Product: Super Spin Shooter Survival
+Team name: Bob the Compiler
+Team members:
+    w.chinkitbryan@digipen.edu (Bryan)
+    hear.l@digipen.edu (Li Heng)
+    zijun.tok@digipen.edu (Zi Jun)
+    jordanyanboon.tan@digipen.edu (Jordan)
+    ng.x@digipen.edu (Derek)
+Class name: CSD1401F22
+Class section: a
+
+Debug Keys(Enabled in options):
+    N - Add Xp
+    M - Take Damage
+    I - Open level up menu
+    C - Toggle render colliders
+    T - Add 30s to timer UI
+    E - Next wave of enemies
+    Shift+E - Continuously spawning a lot of enemies
+
+Tips:
+    Game length is expect to be short, around 5mins.
+        3min for difficulty to be moderate
+        5min for difficulty to be hard
+    Collect Xp dropped from enemies to get stronger
+    Enemies scale over time so dont fall behind
+    Swapping rotation quickly will steady your aim
+    Goal is to survive as long as possible

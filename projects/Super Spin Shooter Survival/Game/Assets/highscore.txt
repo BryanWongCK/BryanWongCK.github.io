@@ -1,0 +1,9 @@
+3.3 Player1
+2.2 Player2
+0.3 Player3
+0.2 Player4
+0.1 Player5
+0.05 Player6
+0.04 Player7
+0.02 Player8
+0.01 Player9

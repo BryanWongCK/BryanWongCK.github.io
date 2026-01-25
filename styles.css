@@ -117,14 +117,23 @@ nav {
     background-color: #f0f0f0;
 }
 
-.project-media img {
+.project-media img,
+.project-media video {
     width: 100%;
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s;
 }
 
+.project-media img {
+    cursor: pointer;
+}
+
 .project-card:hover .project-media img {
+    transform: scale(1.05);
+}
+
+.project-card:hover .project-media video {
     transform: scale(1.05);
 }
 
@@ -173,11 +182,15 @@ nav {
 
 .about p {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 1.5rem auto;
     text-align: center;
     font-size: 1.1rem;
     line-height: 1.8;
     color: #666;
+}
+
+.about p:last-child {
+    margin-bottom: 0;
 }
 
 /* Contact Section */
@@ -210,6 +223,105 @@ footer {
     padding: 2rem;
 }
 
+/* Carousel Modal */
+.carousel-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 10000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-modal.active {
+    display: flex;
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-content {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.carousel-media-wrapper {
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 10001;
+    border-radius: 5px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.carousel-btn.prev {
+    left: 20px;
+}
+
+.carousel-btn.next {
+    right: 20px;
+}
+
+.carousel-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 3rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10001;
+    transition: opacity 0.3s;
+    line-height: 1;
+    padding: 0;
+}
+
+.carousel-close:hover {
+    opacity: 0.7;
+}
+
+.carousel-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-content h1 {
@@ -229,6 +341,25 @@ footer {
     .contact h2 {
         font-size: 2rem;
     }
+
+    .carousel-btn {
+        font-size: 1.5rem;
+        padding: 0.75rem 1rem;
+    }
+
+    .carousel-btn.prev {
+        left: 10px;
+    }
+
+    .carousel-btn.next {
+        right: 10px;
+    }
+
+    .carousel-close {
+        font-size: 2rem;
+        top: 10px;
+        right: 15px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -247,5 +378,10 @@ footer {
 
     .hero-content h1 {
         font-size: 1.5rem;
+    }
+
+    .carousel-btn {
+        font-size: 1.2rem;
+        padding: 0.5rem 0.75rem;
     }
 }
