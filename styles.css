@@ -81,7 +81,7 @@ nav {
     margin-top: 1rem;
     font-size: 1rem;
     opacity: 0.8;
-    font-style: italic;
+    font-style: italic !important;
 }
 
 /* Projects Section */
@@ -189,15 +189,20 @@ nav {
 
 .about p {
     max-width: 800px;
-    margin: 0 auto 1.5rem auto;
+    margin: 1.5rem auto !important;
     text-align: center;
     font-size: 1.1rem;
     line-height: 1.8;
     color: #666;
+    display: block;
+}
+
+.about p:first-of-type {
+    margin-top: 0;
 }
 
 .about p:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
 }
 
 /* Contact Section */
