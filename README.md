@@ -1,5 +1,3 @@
-# BryanWongCK.github.io
-
 A portfolio website showcasing projects through screenshots and GIFs.
 
 ## Features
